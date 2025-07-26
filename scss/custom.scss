@@ -1,0 +1,19 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors:(
+    "hcolor": #2c3238,
+    "greyish": #828282,
+    "lorange": #d13f41,
+    "capital": #231d70,
+    "sbg": #f7f7f7,
+    "cards": #e9eff2,
+    "dblue": #083354
+);
+
+$theme-colors: map-merge(
+  $theme-colors,
+  $custom-colors
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
